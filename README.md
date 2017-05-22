@@ -3,7 +3,8 @@ A layout for an image posting social media site
 
 #How To:
 Download the package.
-Run 'npm start'
+Run 'npm install'.
+Run 'npm start'.
 
 #todo
 Implement React-Router

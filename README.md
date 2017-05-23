@@ -2,14 +2,14 @@
 A layout for an image posting social media site
 
 #How To:
-Download the package.
-Run 'npm install'.
-Run 'npm start'.
+1.Download the package.
+1.Run 'npm install'.
+1.Run 'npm start'.
 
 #todo
-Implement React-Router
-Figure out how to change where the bundle is saved
-Implement Express Server
-Organize dummy text in place of pictures
-Make sure server delivers page a can request text from files
-organize front page components
+1.~~Implement React-Router~~
+1.Figure out how to change where the bundle is saved
+1.Implement Express Server
+1.Organize dummy text in place of pictures
+1.Make sure server delivers page a can request text from files
+1.organize front page components

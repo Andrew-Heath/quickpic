@@ -7,17 +7,20 @@ for (var i = 1; i < 5; i++) {
 module.exports = (app) => {
 
   app.get('/users/*', (req, res) => {
-    console.log(req.url);
+    // get the given endpoint
     var endPoint = req.url.slice(7);
-    console.log('endpoint = ' + endPoint);
+
+    // check to see if the endpoint is valid
     if(endPoint.length > 0 && Number(endPoint) > -1) {
-      console.log('in number');
+      // if so, send back the user image information
       res.send(users[endPoint])
     } else {
+      // if not, redirect to the all users page
       res.redirect('/');
     }
   })
 
+  // redirect all unhandled page access to the front page
   app.get('*', (req, res) => {
     console.log('in catchall');
     res.redirect('/');

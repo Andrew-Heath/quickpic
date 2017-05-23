@@ -17,7 +17,6 @@ const store = configureStore();
 ReactDOM.render(
   <Provider store={store}>
     <div>
-      <App />
       <Router>
         <Route exact path='/' component={App}/>
       </Router>

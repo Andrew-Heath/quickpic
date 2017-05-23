@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Component Imports
-import App from './App';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import Header from './components/header.js';
+import Landing from './components/landing.js';
+import { BrowserRouter as Switch, Route, Link } from 'react-router-dom'
 
 // Redux related imports
 import {Provider} from 'react-redux';
@@ -17,9 +18,10 @@ const store = configureStore();
 ReactDOM.render(
   <Provider store={store}>
     <div>
-      <Router>
-        <Route exact path='/' component={App}/>
-      </Router>
+      <Header />
+      <Switch>
+        <Route exact path='/' component={Landing}/>
+      </Switch>
     </div>
   </Provider>,
   document.getElementById('app')

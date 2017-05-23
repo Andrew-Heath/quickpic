@@ -17,7 +17,7 @@ const store = configureStore();
 
 ReactDOM.render(
   <Provider store={store}>
-    <div>
+    <div classname="background">
       <Header />
       <Switch>
         <Route exact path='/' component={Landing}/>

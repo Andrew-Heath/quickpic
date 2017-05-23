@@ -13,3 +13,15 @@ A layout for an image posting social media site
 1. ~~Organize dummy text in place of pictures~~
 1. ~~Make sure server delivers page and can request text from files~~
 1. organize front page components
+  1. landing page
+    1. header
+    1. login
+    1. sign in
+    1. footer with example links
+  1. user profile
+    1. user info
+    1. post
+      1. picture modal
+  1. user followers
+    1. posts
+      1. picture modal

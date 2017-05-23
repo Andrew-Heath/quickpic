@@ -6,16 +6,18 @@ for (var i = 1; i < 5; i++) {
 
 module.exports = (app) => {
 
-  var sendFile = (req, res) => {
-    res.sendFile(__dirname + '/../build/index.html');
-  };
-
   app.get('/users/*', (req, res) => {
+    console.log(req.url);
     var endPoint = req.url.slice(7);
-    if(Number(endPoint)) {
+    if(typeof Number(endPoint) === 'number') {
       res.send(users[endPoint])
     } else {
-      sendFile(req,res);
+      res.redirect('/');
     }
   })
+
+  app.get('*', (req, res) => {
+    console.log('in catchall');
+    res.redirect('/');
+  });
 };

@@ -5,10 +5,6 @@ var app = express();
 
 app.use(express.static(__dirname + '/../build/'));
 
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/../build/index.html');
-});
-
 routes(app);
 
 app.listen(3000, () => {

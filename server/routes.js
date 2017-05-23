@@ -10,7 +10,12 @@ module.exports = (app) => {
     res.sendFile(__dirname + '/../build/index.html');
   };
 
-  app.get('/users/all', (req, res) => {
-    res.send(users);
+  app.get('/users/*', (req, res) => {
+    var endPoint = req.url.slice(7);
+    if(Number(endPoint)) {
+      res.send(users[endPoint])
+    } else {
+      sendFile(req,res);
+    }
   })
 };

@@ -53,7 +53,7 @@
   "scripts": {
     "start" : "npm run build && npm run server",
     "server": "node server/server.js",
-    "build": "node scripts/build.js",
+    "build": "rm -r build && node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom"
   },
   "jest": {

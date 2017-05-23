@@ -22,6 +22,8 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  display: block;
+  position: absolute;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -47,13 +49,12 @@ table {
   border-spacing: 0;
 }
 
-.background {
-  background-color: #ffffdd;
+.background div{
+  background-color: #ffffee;
 }
 
 .header {
-  position: absolute;
-  display: block;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100px;
@@ -62,15 +63,20 @@ table {
 }
 
 .header .site-image {
-  position: absolute;
   top: 33px;
   left: 20px;
   font-size: 33px;
 }
 
 .header .site-tools {
-  position: absolute;
   top: 40px;
   right: 10px;
   font-size: 20px;
+}
+
+.app-wrapper {
+  position: fixed;
+  top: 105px;
+  height: 100%;
+  width: 100%;
 }

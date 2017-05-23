@@ -17,11 +17,13 @@ const store = configureStore();
 
 ReactDOM.render(
   <Provider store={store}>
-    <div classname="background">
+    <div className="background">
       <Header />
-      <Switch>
-        <Route exact path='/' component={Landing}/>
-      </Switch>
+      <div className="app-wrapper">
+        <Switch>
+          <Route exact path='/' component={Landing}/>
+        </Switch>
+      </div>
     </div>
   </Provider>,
   document.getElementById('app')

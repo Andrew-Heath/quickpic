@@ -21,6 +21,7 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
+  font-family: sans-serif;
   vertical-align: baseline;
   display: block;
   position: absolute;
@@ -103,7 +104,7 @@ table {
 }
 
 .col-2 {
-  top: 20px;
+  top: 10px;
   height: 490px;
   width: 290px;
   padding: 3px;

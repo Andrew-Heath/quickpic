@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 // Component Imports
 import Header from './components/header.js';
+import Footer from './components/footer.js';
 import Landing from './components/landing.js';
 import { BrowserRouter as Switch, Route, Link } from 'react-router-dom'
 
@@ -24,6 +25,7 @@ ReactDOM.render(
           <Route exact path='/' component={Landing}/>
         </Switch>
       </div>
+      <Footer />
     </div>
   </Provider>,
   document.getElementById('app')

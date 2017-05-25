@@ -49,6 +49,11 @@ table {
   border-spacing: 0;
 }
 
+.backgroun {
+  height: 100%;
+  width: 100%;
+}
+
 .background div{
   background-color: #ffffee;
 }
@@ -57,7 +62,7 @@ table {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100px;
+  height: 85px;
   width: 100%;
   border-bottom: 5px solid #000;
 }
@@ -74,9 +79,33 @@ table {
   font-size: 20px;
 }
 
-.app-wrapper {
+.landing {
   position: fixed;
-  top: 105px;
+  top: 90px;
   height: 100%;
   width: 100%;
+}
+
+.col-wrapper {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 50%;
+}
+
+.col-2 {
+  top: 20px;
+  height: 490px;
+  width: 290px;
+  padding: 3px;
+  border: 2px solid #000;
+  text-align: center;
+}
+
+.col-left {
+  left: -325px;
+}
+
+.col-right {
+  left: 25px;
 }

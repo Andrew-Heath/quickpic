@@ -6,7 +6,7 @@ class Footer extends Component {
   render() {
     return (
       <div className="footer">
-        <div className="reflinks">Links to the pages of this example go here.</div>
+        <div className="reflinks">User Profile | Example User | Activity Feed | Most Recent from All Users</div>
       </div>
     );
   }

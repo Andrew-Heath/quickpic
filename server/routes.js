@@ -11,7 +11,9 @@ module.exports = (app) => {
     var endPoint = req.url.slice(7);
 
     // check to see if the endpoint is valid
-    if(endPoint.length > 0 && Number(endPoint) > -1) {
+    if(endPoint === 'all') {
+      res.send(users);
+    } else if(endPoint.length > 0 && Number(endPoint) > -1) {
       // if so, send back the user image information
       res.send(users[endPoint])
     } else {
